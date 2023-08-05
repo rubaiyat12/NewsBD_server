@@ -34,7 +34,7 @@ try {
 
     })
     app.get('/news', (req, res) => {
-        res.send(news);
+        res.json(news);
     })
     app.get('/news/:id', (res, req) => {
         const id = req.params.id;
